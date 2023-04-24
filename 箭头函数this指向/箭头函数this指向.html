@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 箭头函数里的this指向fn
+    // fn通过call调用并把this指向obj
+    // fn返回值是一个箭头函数，而返回值又赋值到fea,所以调用fea就是调用箭头函数
+    // 由于fea返回值为箭头函数，箭头函数有指向fn,fn有指向obj,所以两次打印都是obj对象
+    // const obj ={name:'zs'}
+    // function fn(){
+      // console.log(this);
+      // return ()=>{
+        // console.log(this);
+      // }
+    // }
+    //  let fea =fn.call(obj)
+    // fea()
+    var age =10;
+var obj ={
+age:20,
+say:()=>{
+alert(this.age)
+}
+}
+obj.say();
+
+  </script>
+</body>
+</html>

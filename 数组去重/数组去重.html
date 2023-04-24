@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      // const arr = [1, 1, 2, 2, 3, 3, 3, 4, 5, 7, 9, 9];
+      // <!-- 1.Es6中Set去重 -->
+      // const setDate = Array.from(new Set(arr))
+      // console.log(setDate);
+
+      // 2.双重for循环去重
+      // n=arr.length
+      // for(let i= 0; i<n;i++){
+      // for(let j=i+1;j<n;j++){
+      // if(arr[i]===arr[j]){
+      // arr.splice(j,1)
+      // n--
+      // j--
+      // }
+      // }
+      // }
+      // console.log(arr);
+
+      // 3.indexOf去重----------?
+      // const arr = [1, 1, 2, 2, 3, 3, 3, 4, 5, 7, 9, 9]
+      // const handleRemoveRepest = arr => {
+      // let arr1 = []
+      // for (let i = 0; i < arr.length; i++) 
+      // if (arr1.indexOf(arr[i]) === -1) 
+      // arr1.push(arr[i])
+      // return arr1
+      // }
+      //  let asd = handleRemoveRepest([1, 1, 2, 2, 3, 3, 3, 4, 5, 7, 9, 1])
+      //  console.log(asd);
+       
+
+      // 4.includes去重---------?
+      
+      // const handleRemoveRepest = (arr) => {
+        // let are = []
+        // for (let i = 0; i < arr.length; i++)
+          // if (!are.includes(arr[i])) are.push(arr[i])
+        // return are
+      // }
+      // var asd = handleRemoveRepest([1, 1, 2, 2, 3, 3, 5, 7, 7])
+      // console.log(asd);
+
+      // filter去重
+
+      // const handleRemoveRepest = (arr) =>
+        // arr.filter((item,index)=>arr.indexOf(item,0)===index)
+
+      //
+      // console.log(handleRemoveRepest([1,1,2,2,3,3,3,4,4]) );
+
+// 练习
+
+// const add = (n1,n2 )=>{
+  // return n1+n2
+// }
+// console.log(add(1,2));
+
+// const add = (v)=>{
+  // console.log(v);
+// }
+  // add(1)
+// 
+// 
+
+    </script>
+
+
+  </body>
+
+</html>
